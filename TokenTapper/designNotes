@@ -1,0 +1,37 @@
+Design Notes for Token Tapper
+- Devices get you higher token per second (TPS)
+- Free version can't get tokens in the background
+- Get tokens to buy more devices
+- Device List
+	Parking meter
+	Arcade machine
+	slot machine
+	subways?
+	mall horses?
+	quarry?
+	casino?
+	car washes?
+	arcades?
+	mint?
+	laundry mat?
+	vending machine?
+	
+	--need wacky devices---
+	panhandlers?
+	Golems?(punch rocks for tokens)
+	treasure keep (use dragons to protect them)
+	treasure trove
+	
+-Feature list
+	Shop (use tokens to buy things)
+		device upgrades
+		token designs
+		strange objects
+	Music and sound effects
+			
+To-Do List
+	1. Fix all code once base func is complete
+	2. Add override to all Android Events
+	3. Save data when close and open
+	4. Unjaded splash screen
+	5. Main menu/Title screen

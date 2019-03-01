@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtMeterCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad"
+        android:layout_alignParentLeft="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imgSlotBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/slotmachine100x100faded" />
+
+            <ImageButton
+                android:id="@+id/imgSubwayBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/subway100x100faded" />
+
+            <ImageButton
+                android:id="@+id/imgTroveBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/trove100x100faded"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/imgQuarryBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/quarry100x100faded" />
+
+            <ImageButton
+                android:id="@+id/imgMeterBuy"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/meter60x60faded" />
+
+            <ImageButton
+                android:id="@+id/imgArcadeBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/arcadegame100x100faded" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtArcadeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/imgBigToken"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtSlotCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTokenCount"
+        android:layout_toLeftOf="@+id/imgBigToken"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtTPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imgBigToken"
+        android:layout_below="@+id/txtMeterCount"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="57dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/imgBigToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTPS"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/token" />
+
+    <TextView
+        android:id="@+id/txtTokenCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMeterCount"
+        android:layout_toLeftOf="@+id/txtTPS"
+        android:text="@string/CoinCounter"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txtTPStext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTPS"
+        android:layout_alignBottom="@+id/txtTPS"
+        android:layout_toLeftOf="@+id/txtTPS"
+        android:text="@string/lable_TPS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtTapRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgBigToken"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="Tap Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtSubwayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBigToken"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/imgBigToken"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtQuarryCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSubwayCount"
+        android:layout_toLeftOf="@+id/txtTokenCount"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtTroveCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtArcadeCount"
+        android:layout_below="@+id/txtQuarryCount"
+        android:layout_marginRight="14dp"
+        android:text="TextView" />
+
+     <com.google.ads.AdView
+        xmlns:googleads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        googleads:adSize="BANNER"
+        googleads:adUnitId="@string/admob_id" />
+</RelativeLayout>
